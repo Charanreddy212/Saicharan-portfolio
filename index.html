@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Sai Charan Reddy</title>
+    <meta name="description" content="Professional portfolio of Sai Charan Reddy Obili - TQM & Process Supervisor with expertise in ISO compliance and continuous improvement">
+    <meta name="keywords" content="Sai Charan Reddy, TQM Supervisor, Process Supervisor, Portfolio, ISO Compliance, Quality Management">
+    <meta name="author" content="Sai Charan Reddy Obili">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Portfolio - Sai Charan Reddy">
+    <meta property="og:description" content="Professional portfolio showcasing TQM and process supervision expertise">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saicharanreddyportfolio.github.io">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Sai Charan Reddy">
+    <meta name="twitter:description" content="Professional portfolio showcasing TQM and process supervision expertise">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <h2>Sai Charan Reddy</h2>
+            <p>Loading portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Liquid Background -->
+    <canvas id="liquid-background" class="liquid-background"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <button onclick="scrollToSection('header')" class="brand-btn">
+                </button>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu desktop-menu">
+                <button onclick="scrollToSection('about')" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </button>
+                <button onclick="scrollToSection('experience')" class="nav-link" data-section="experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </button>
+                <button onclick="scrollToSection('skills')" class="nav-link" data-section="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </button>
+                <button onclick="scrollToSection('projects')" class="nav-link" data-section="projects">
+                    <i class="fas fa-folder"></i>
+                    <span>Projects</span>
+                </button>
+                <button onclick="scrollToSection('education')" class="nav-link" data-section="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </button>
+                <button onclick="scrollToSection('certifications')" class="nav-link" data-section="certifications">
+                    <i class="fas fa-award"></i>
+                    <span>Certifications</span>
+                </button>
+                <button onclick="scrollToSection('hobbies')" class="nav-link" data-section="hobbies">
+                    <i class="fas fa-heart"></i>
+                    <span>Hobbies</span>
+                </button>
+                <button onclick="scrollToSection('resume')" class="nav-link" data-section="resume">
+                    <i class="fas fa-file-text"></i>
+                    <span>Resume</span>
+                </button>
+                <button onclick="scrollToSection('contact')" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-grid">
+                <button onclick="scrollToSection('about')" class="mobile-nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </button>
+                <button onclick="scrollToSection('experience')" class="mobile-nav-link" data-section="experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </button>
+                <button onclick="scrollToSection('skills')" class="mobile-nav-link" data-section="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </button>
+                <button onclick="scrollToSection('projects')" class="mobile-nav-link" data-section="projects">
+                    <i class="fas fa-folder"></i>
+                    <span>Projects</span>
+                </button>
+                <button onclick="scrollToSection('education')" class="mobile-nav-link" data-section="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </button>
+                <button onclick="scrollToSection('certifications')" class="mobile-nav-link" data-section="certifications">
+                    <i class="fas fa-award"></i>
+                    <span>Certifications</span>
+                </button>
+                <button onclick="scrollToSection('hobbies')" class="mobile-nav-link" data-section="hobbies">
+                    <i class="fas fa-heart"></i>
+                    <span>Hobbies</span>
+                </button>
+                <button onclick="scrollToSection('resume')" class="mobile-nav-link" data-section="resume">
+                    <i class="fas fa-file-text"></i>
+                    <span>Resume</span>
+                </button>
+                <button onclick="scrollToSection('contact')" class="mobile-nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-bg-elements">
+            <div class="bg-element bg-element-1"></div>
+            <div class="bg-element bg-element-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="images/Sai charan.jpg" alt="Profile Picture" class="profile-img" />
+                            <div class="profile-ring"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-info">
+                    <h1 class="header-name">Sai Charan Reddy Obili</h1>
+                    
+                    <!-- Current Experience -->
+                    <div class="current-experience">
+                        <div class="experience-header">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Current Position</span>
+                        </div>
+                        <div class="experience-details">
+                            <h3>TQM & Process Supervisor</h3>
+                            <p>Vikram Solar Limited</p>
+                            <p class="duration">September 2024 - Present</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:charanreddy.vip212@gmail.com">charanreddy.vip212@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:7680945776">7680945776</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chennai, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Charanreddy212" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sai-charan-reddy-obili-5072b3218/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-user"></i>
+                    <h2>About Me</h2>
+                </div>
+                <div class="card-content">
+                    <p>I am a Dynamic TQM Supervisor at Vikram Solar Limited, specializing in ISO compliance and continuous improvement. With a proven track record in data analysis and effective training delivery, I have enhanced process efficiency and reduced downtime. My skills in Six Sigma methodologies and strong communication drive successful audits and risk management initiatives across various projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-briefcase"></i>
+                    <h2>Professional Experience</h2>
+                </div>
+                <div class="card-content">
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <h3>Vikram Solar Limited</h3>
+                                        <i class="fas fa-trending-up"></i>
+                                    </div>
+                                    <h4>TQM & Process Supervisor</h4>
+                                    <p class="duration">
+                                        <i class="fas fa-briefcase"></i>
+                                        September 2024 - Present
+                                    </p>
+                                    <p class="description">TQM Department: The major role of my work is focused on customer audits, data 
+analysis, instrument calibration, documentation control, ISO external audits, internal 
+audits, and NC closure.
+ Training module development and delivery, risk management, communication and 
+coordination, continuous improvement, and implementation of TQM activities, along 
+with standard integration ISO 9001, 14001, 45001, and preparation of SOPs and 
+reports.
+ In TQM, I have acquired skills in integrating each process, aligning with the system 
+established, and compliance activities.
+ I have delivered many trainings with respect to ISO standards and Lean-related 
+tools.
+ Extra activities, including working with cross-functional teams and effectiveness 
+audits.
+ Process Quality: I have managed my time in progressing at a process that includes 
+process integration in various stages and optimization.
+ I do have knowledge of core tools, raw materials, and manufacturing stages, root 
+cause analysis, 5-why analysis, and 7QC tools for data analysis. Additionally, I have 
+worked on creating SPC Statistical Process Control), such as the usage of control 
+charts for various types of data, and I do have knowledge about Kaizen and 5S
+related skills.
+ I have contributed to projects like Six Sigma for reducing low-grade modules and 
+decreasing cycle downtime by increasing productivity, which also includes the 
+preparation of kaizens and prioritized risk identification through matrix charts.
+ I learned about Datapaq skills and various testing methods and sampling techniques 
+in IQC and IPQC tests, like gel content, peel test, adhesion test, and IV test of cell, 
+etc. w.r.t to IEC 61215 & 61730 & UL Standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <h3>Goldi Solar Private Limited</h3>
+                                        <i class="fas fa-trending-up"></i>
+                                    </div>
+                                    <h4>Management Trainee</h4>
+                                    <p class="duration">
+                                        <i class="fas fa-briefcase"></i>
+                                        January 2024 - September 2024
+                                    </p>
+                                    <p class="description"> IMS Department: The major role of my work is focused on data analysis, 
+documentation control, ISO external audits, internal audit compliance, NC closure, 
+training modules development and delivery, risk Assessment, HIRA, MRM 
+communication and coordination, continuous improvement, and implementation of 
+IMS ISO 9001, 14001, 45001 and preparation of SOPs and reports.
+                                    </p>IPQC In-Process Quality Control : I have focused on testings such as gel, peel, sun 
+soaking, damp heat, mechanical load test, and process parameter optimization.
+ I do have knowledge of core tools, raw materials, and manufacturing stages, root 
+cause analysis, 5-why analysis, and 7QC tools for data analysis. Additionally, I have 
+worked on creating SPC Statistical Process Control), such as the usage of control 
+charts for various types of data, and I do have knowledge about Kaizen and 5S
+related skills..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-code"></i>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="card-content">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#10b981" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="0" class="donut-progress" data-level="5"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">100%</span>
+                                    <span class="level">Expert</span>
+                                </div>
+                            </div>
+                            <h3>ISO Compliance</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#3b82f6" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="57" class="donut-progress" data-level="4"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">80%</span>
+                                    <span class="level">Advanced</span>
+                                </div>
+                            </div>
+                            <h3>Six Sigma</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#10b981" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="0" class="donut-progress" data-level="5"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">100%</span>
+                                    <span class="level">Expert</span>
+                                </div>
+                            </div>
+                            <h3>Quality Management</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#3b82f6" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="57" class="donut-progress" data-level="4"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">80%</span>
+                                    <span class="level">Advanced</span>
+                                </div>
+                            </div>
+                            <h3>Data Analysis</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#10b981" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="0" class="donut-progress" data-level="5"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">100%</span>
+                                    <span class="level">Expert</span>
+                                </div>
+                            </div>
+                            <h3>Process Improvement</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#3b82f6" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="57" class="donut-progress" data-level="4"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">80%</span>
+                                    <span class="level">Advanced</span>
+                                </div>
+                            </div>
+                            <h3>Risk Management</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#3b82f6" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="57" class="donut-progress" data-level="4"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">80%</span>
+                                    <span class="level">Advanced</span>
+                                </div>
+                            </div>
+                            <h3>Training & Development</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-donut">
+                                <svg class="donut-svg" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#e5e7eb" stroke-width="8" fill="transparent"/>
+                                    <circle cx="50" cy="50" r="45" stroke="#3b82f6" stroke-width="8" fill="transparent" 
+                                            stroke-dasharray="283" stroke-dashoffset="57" class="donut-progress" data-level="4"/>
+                                </svg>
+                                <div class="donut-center">
+                                    <span class="percentage">80%</span>
+                                    <span class="level">Advanced</span>
+                                </div>
+                            </div>
+                            <h3>Audit Management</h3>
+                            <div class="skill-dots">
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-folder"></i>
+                    <h2>Projects</h2>
+                </div>
+                <div class="card-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>ISO 9001:2015 Implementation</h3>
+                            </div>
+                            <div class="project-content">
+                                <p>Led the implementation of ISO 9001:2015 quality management system across the organization, resulting in improved process efficiency and customer satisfaction.</p>
+                                <div class="technologies">
+                                    <div class="tech-header">
+                                        <i class="fas fa-tags"></i>
+                                        <span>Technologies</span>
+                                    </div>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Quality Management</span>
+                                        <span class="tech-tag">ISO Standards</span>
+                                        <span class="tech-tag">Process Mapping</span>
+                                        <span class="tech-tag">Documentation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Six Sigma Process Improvement</h3>
+                            </div>
+                            <div class="project-content">
+                                <p>Implemented Six Sigma DMAIC methodology to reduce process variations and improve product quality, achieving significant cost savings.</p>
+                                <div class="technologies">
+                                    <div class="tech-header">
+                                        <i class="fas fa-tags"></i>
+                                        <span>Technologies</span>
+                                    </div>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Six Sigma</span>
+                                        <span class="tech-tag">DMAIC</span>
+                                        <span class="tech-tag">Statistical Analysis</span>
+                                        <span class="tech-tag">Process Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Education</h2>
+                </div>
+                <div class="card-content">
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Audisankara College of Engineering & Technology</h3>
+                                <p>Bachelor of Technology - B.Tech</p>
+                                <p>Electronics and Communication Engineering- 8.91 CGPA</p>
+                                <p class="duration">2021-2024</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Government Polytechnic College</h3>
+                                <p>Diploma</p>
+                                <p>Electronics and Communication Engineering- 85.17 %</p>
+                                <p class="duration">2018-2021</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Ravindra Bharathi High School</h4>
+                                <p>Secondary school of Education- 9.7 CGPA</p>
+                                <p class="duration">2018</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-award"></i>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="card-content">
+                    <div class="certifications-grid">
+                        <div class="certification-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h3>Six Sigma Green Belt</h3>
+                                <div class="cert-issuer">
+                                    <i class="fas fa-building"></i>
+                                    <p>ASQ (American Society for Quality)</p>
+                                </div>
+                                <div class="cert-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certification-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h3>ISO 9001:2015 Lead Auditor</h3>
+                                <div class="cert-issuer">
+                                    <i class="fas fa-building"></i>
+                                    <p>IRCA</p>
+                                </div>
+                                <div class="cert-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <p>2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-heart"></i>
+                    <h2>Hobbies & Interests</h2>
+                </div>
+                <div class="card-content">
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="hobby-content">
+                                <h3>Data Analytics</h3>
+                                <p>Passionate about analyzing data trends and creating insights that drive business decisions and process improvements.</p>
+                            </div>
+                        </div>
+
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="hobby-content">
+                                <h3>Continuous Learning</h3>
+                                <p>Always exploring new quality management methodologies, industry best practices, and professional development opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-file-text"></i>
+                    <h2>Resume</h2>
+                </div>
+                <div class="card-content">
+                    <div class="resume-section">
+                        <div class="resume-content">
+                            <div class="resume-icon">
+                                <i class="fas fa-file-text"></i>
+                            </div>
+                            <div class="resume-info">
+                                <h3>My Resume</h3>
+                                <p>Download my resume to learn more about my education, experience, and skills.</p>
+                                <div class="resume-actions">
+                                    <!-- Preview Button -->
+                                    <a href="resume/SaiCharanReddyObiliResume.pdf" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-eye"></i> Preview Resume
+                                     </a>
+                                    <!-- Download Button -->
+                                    <a href="resume/SaiCharanReddyObiliResume.pdf" download class="btn btn-primary">
+                                        <i class="fas fa-download"></i> Download Resume
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-envelope"></i>
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="card-content">
+                    <div class="contact-grid">
+                        <div class="contact-info-section">
+                            <h3>Get in Touch</h3>
+                            <p>Feel free to contact me for any work & Job opportunities.</p>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Email</h4>
+                                        <a href="mailto:charanreddy.vip212@gmail.com">charanreddy.vip212@gmail.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Phone</h4>
+                                        <a href="tel:7680943774">7680945776</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Location</h4>
+                                        <p>Chennai, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <h3>Connect with Me</h3>
+                            <p>Find me on the following social platforms.</p>
+                            
+                            <div class="social-items">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>GitHub</h4>
+                                        <a href="https://github.com/Charanreddy212" target="_blank">github.com/Charanreddy212</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>LinkedIn</h4>
+                                        <a href="https://www.linkedin.com/in/sai-charan-reddy-obili-5072b3218/" target="_blank">linkedin.com/in/sai-charan-reddy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <div class="footer-links">
+                        <div class="footer-link">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:charanreddy.vip212@gmail.com">charanreddy.vip212@gmail.com</a>
+                        </div>
+                        <div class="footer-link">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:7680943774">7680945776</a>
+                        </div>
+                        <div class="footer-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chennai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="footer-links">
+                        <div class="footer-link">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Charanreddy212" target="_blank">GitHub</a>
+                        </div>
+                        <div class="footer-link">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/sai-charan-reddy-obili-5072b3218/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#about" onclick="scrollToSection('about')">About</a>
+                        <a href="#experience" onclick="scrollToSection('experience')">Experience</a>
+                        <a href="#skills" onclick="scrollToSection('skills')">Skills</a>
+                        <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+                        <a href="#education" onclick="scrollToSection('education')">Education</a>
+                        <a href="#resume" onclick="scrollToSection('resume')">Resume</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 All Rights Reserved</p>
+                    <div class="footer-heart">
+                        <i class="fas fa-heart"></i>
+                        <span>Made by Sai Charan Reddy Obili</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <button class="floating-btn dashboard-btn" onclick="openDashboard()">
+            <i class="fas fa-chart-bar"></i>
+            <span>Dashboard</span>
+        </button>
+        
+        <button class="floating-btn chat-btn" onclick="openChat()">
+            <i class="fas fa-comments"></i>
+            <span>AI Chat</span>
+        </button>
+    </div>
+
+    <!-- Dashboard Modal -->
+    <div id="dashboard-modal" class="modal">
+        <div class="modal-content dashboard-content">
+            <div class="modal-header">
+                <h2>Portfolio Dashboard</h2>
+                <button class="modal-close" onclick="closeDashboard()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>1.5</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>8</h3>
+                            <p>Technical Skills</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>2</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>2</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Modal -->
+    <div id="chat-modal" class="modal">
+        <div class="modal-content chat-content">
+            <div class="modal-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3>AI Assistant</h3>
+                        <p>Ask me anything about the portfolio</p>
+                    </div>
+                </div>
+                <button class="modal-close" onclick="closeChat()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Hi! I'm Sai Charan Reddy's AI assistant. I can help you learn more about their background, skills, experience, and projects. What would you like to know?</p>
+                            <span class="message-time">Just now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="Ask me anything..." onkeypress="handleChatKeyPress(event)">
+                    <button onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
